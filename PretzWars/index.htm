@@ -1,0 +1,48 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Pretz Wars">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="robots" content="noindex,nofollow" />	
+	<meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=0 minimal-ui" />
+	<title>Pretz Wars</title>
+	<script type="text/javascript" src="js/phaser.min.js"></script>
+	<script type="text/javascript" src="js/gyro.min.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+			background-color:#000000;
+        }
+		
+		#tilt_phone
+		{
+			   z-index:999;
+			   display:block;
+			   position:absolute;
+			   top: 50%;
+			   left: 50%;
+			   width: 169px;
+			   height: 152px;
+			   margin-top: -76px; /* Half the height */
+			   margin-left: -85px; /* Half the width */
+		}
+		
+		#PretzWars
+		{
+			display:none;
+		}		
+		
+    </style>
+</head>
+<body>
+	<div id="tilt_phone"><img src="img/tilt.png" alt="Tilt the phone" /></div>
+	<div id="PretzWars"></div>
+<script type="text/javascript" src="js/PretzWars.js"></script>
+</body>
+</html>
