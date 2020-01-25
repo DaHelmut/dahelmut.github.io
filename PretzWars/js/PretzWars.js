@@ -868,8 +868,8 @@ var InstructionState = {
 	create : function()
 	{	
 		// The background image is added as a TileSprite
-		tileBG = game.add.tileSprite(0, 0, w, h, 'space_bg');
-		
+		//tileBG = game.add.tileSprite(0, 0, w, h, 'space_bg');
+		tileBG =  this.game.add.tileSprite(0, 0, game.stage.bounds.width, game.cache.getImage('space_bg').height, 'space_bg');
 		next_button = game.add.button(game.world.centerX, game.height-55,'next_button', function(){instructions_state++;}, this, 1, 0, 1);
 			next_button.anchor.set(0.5,0.5);
 			next_button.visible = true;
@@ -950,8 +950,8 @@ var InstructionState = {
 	create : function()
 	{
 		// The background image is added as a TileSprite
-		tileBG = game.add.tileSprite(0, 0, w, h, 'space_bg');
-		
+		//tileBG = game.add.tileSprite(0, 0, w, h, 'space_bg');
+		tileBG =  this.game.add.tileSprite(0, 0, game.stage.bounds.width, game.cache.getImage('space_bg').height, 'space_bg');
 		// Add the logo
 		logo = game.add.sprite(game.world.centerX, 120, 'logo_small');
 			logo.anchor.set(0.5,0.5);		
@@ -979,8 +979,8 @@ var InstructionState = {
 		document.getElementById("PretzWars").style.display = "block";
 		
 		// The background image is added as a TileSprite
-		tileBG = game.add.tileSprite(0, 0, w, h, 'space_bg');
-
+		//tileBG = game.add.tileSprite(0, 0, w, h, 'space_bg');
+		tileBG =  this.game.add.tileSprite(0, 0, game.stage.bounds.width, game.cache.getImage('space_bg').height, 'space_bg');
 		// We add the text with the specific bitmap font
 		level_text = game.add.bitmapText(10, 10, 'rebellion', '', 35);
 		pretzels_text = game.add.bitmapText(10, 60, 'rebellion', '', 35);
@@ -1099,7 +1099,8 @@ var InstructionState = {
 		}
 		else
 		{
-			gyro_check = false;
+			// On force l'utilisation du gyro
+			gyro_check = true;
 		}		
 		
 		// We enable the gyroscope control if not 
