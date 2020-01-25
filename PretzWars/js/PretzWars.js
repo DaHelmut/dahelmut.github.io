@@ -11,7 +11,7 @@
 
 // Game references
 	var game;
-	var height = 800;
+	var height = 768;
 	var width = 1024;
 
 // Tile sprite background 
@@ -694,8 +694,8 @@ function checkInputs()
     create: function() {
         if (game.device.desktop){
              game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-             game.scale.maxWidth = 800;
-             game.scale.maxHeight = 480;
+             game.scale.maxWidth = 1024;
+             game.scale.maxHeight = 768;
              game.scale.pageAlignHorizontally = true;
              game.scale.pageAlignVertically = true;
 	     game.scale.updateLayout(true);
