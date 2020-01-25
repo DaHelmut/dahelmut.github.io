@@ -805,7 +805,7 @@ var WinState = {
 	{
 		// The background image is added as a TileSprite
 		//tileBG = game.add.tileSprite(0, 0, w, h, 'space_bg');	
-		tileBG =  this.game.add.tileSprite(0, 0, game.stage.bounds.width, game.cache.getImage('space_bg').height, 'space_bg');
+		tileBG =  game.add.tileSprite(0, 0, game.stage.getBounds.width, game.cache.getImage('space_bg').height, 'space_bg');
 		/* close_button = game.add.button(game.world.width - 60, game.world.centerY,'close_button', function(){game.scale.stopFullScreen();retryPretzWars('MenuState');}, this, 1, 0, 1);
 			close_button.anchor.set(0.5,0.5);
 			close_button.visible = false; */
@@ -869,7 +869,7 @@ var InstructionState = {
 	{	
 		// The background image is added as a TileSprite
 		//tileBG = game.add.tileSprite(0, 0, w, h, 'space_bg');
-		tileBG =  this.game.add.tileSprite(0, 0, game.stage.bounds.width, game.cache.getImage('space_bg').height, 'space_bg');
+                tileBG =  game.add.tileSprite(0, 0, game.stage.getBounds.width, game.cache.getImage('space_bg').height, 'space_bg');
 		next_button = game.add.button(game.world.centerX, game.height-55,'next_button', function(){instructions_state++;}, this, 1, 0, 1);
 			next_button.anchor.set(0.5,0.5);
 			next_button.visible = true;
@@ -951,7 +951,7 @@ var InstructionState = {
 	{
 		// The background image is added as a TileSprite
 		//tileBG = game.add.tileSprite(0, 0, w, h, 'space_bg');
-		tileBG =  this.game.add.tileSprite(0, 0, game.stage.bounds.width, game.cache.getImage('space_bg').height, 'space_bg');
+		tileBG =  game.add.tileSprite(0, 0, game.stage.getBounds.width, game.cache.getImage('space_bg').height, 'space_bg');
 		// Add the logo
 		logo = game.add.sprite(game.world.centerX, 120, 'logo_small');
 			logo.anchor.set(0.5,0.5);		
@@ -980,7 +980,7 @@ var InstructionState = {
 		
 		// The background image is added as a TileSprite
 		//tileBG = game.add.tileSprite(0, 0, w, h, 'space_bg');
-		tileBG =  this.game.add.tileSprite(0, 0, game.stage.bounds.width, game.cache.getImage('space_bg').height, 'space_bg');
+                tileBG =  game.add.tileSprite(0, 0, game.stage.getBounds.width, game.cache.getImage('space_bg').height, 'space_bg');
 		// We add the text with the specific bitmap font
 		level_text = game.add.bitmapText(10, 10, 'rebellion', '', 35);
 		pretzels_text = game.add.bitmapText(10, 60, 'rebellion', '', 35);
