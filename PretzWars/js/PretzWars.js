@@ -804,8 +804,8 @@ var WinState = {
 	create : function()
 	{
 		// The background image is added as a TileSprite
-		tileBG = game.add.tileSprite(0, 0, w, h, 'space_bg');	
-		
+		//tileBG = game.add.tileSprite(0, 0, w, h, 'space_bg');	
+		tileBG =  this.game.add.tileSprite(0, 0, game.stage.bounds.width, game.cache.getImage('space_bg').height, 'space_bg');
 		/* close_button = game.add.button(game.world.width - 60, game.world.centerY,'close_button', function(){game.scale.stopFullScreen();retryPretzWars('MenuState');}, this, 1, 0, 1);
 			close_button.anchor.set(0.5,0.5);
 			close_button.visible = false; */
