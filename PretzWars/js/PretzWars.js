@@ -698,7 +698,8 @@ function checkInputs()
              game.scale.maxHeight = 480;
              game.scale.pageAlignHorizontally = true;
              game.scale.pageAlignVertically = true;
-             game.scale.setScreenSize(true);
+	     game.scale.updateLayout(true);
+             //game.scale.setScreenSize(true);
          }
          else{  
              game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
