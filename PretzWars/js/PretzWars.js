@@ -11,7 +11,7 @@
 
 // Game references
 	var game;
-	var height = 768;
+	var height = 800;
 	var width = 1024;
 
 // Tile sprite background 
