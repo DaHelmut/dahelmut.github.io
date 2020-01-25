@@ -712,7 +712,8 @@ function checkInputs()
              game.scale.forceOrientation(true, false,'orientation'); //landscape, portrait, incorrectorientation image
              game.scale.enterIncorrectOrientation.add(enterIncorrectOrientation);
              game.scale.leaveIncorrectOrientation.add(leaveIncorrectOrientation);
-             game.scale.setScreenSize(true);
+             //game.scale.setScreenSize(true);
+	     game.scale.updateLayout(true);
              game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
          }
         game.state.start('PreloadState');
